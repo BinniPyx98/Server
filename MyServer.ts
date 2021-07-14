@@ -1,6 +1,6 @@
 
 let express=require('express')
-let MongoClient=require('mongodb').MongoClient
+const {MongoClient} = require('mongodb');
 let app=express()
 app.use(express.json())
 
