@@ -4,7 +4,7 @@ const {MongoClient} = require('mongodb');
 let app=express()
 app.use(express.json())
 
-MongoClient.connect('mongodb+srv://XiLLeR:Kalina270698@cluster0.qckeb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',(error,database)=>{
+MongoClient.connect('mongodb+srv://XiLLeR:Kalina270698@cluster0.qckeb.mongodb.net/myFirstDatabase?authSource=admin',(error,database)=>{
     if(error){
         console.log(error)
     }
